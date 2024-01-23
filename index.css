@@ -21,20 +21,6 @@
     --p-font: 1rem;
 }
 
-:root
-{
-    --primary-color: #a855f7;
-    --primary-color-dark: #9333ea;
-    --secondary-color: #ca8a04;
-    --text-dark: #1f2937;
-    --text-light: #6b7280;
-    --etra-light: #faf5ff;
-    --max-width: #1200px;
-
-    --bg-color: #1b1f24;
-    --second-bg-color: #22282f;
-}
-
 body
 {
     background: var(--bg-color);
@@ -59,18 +45,23 @@ nav
     justify-content: space-between;
 }
 
+nav .logo
+{
+    margin-left: 5%;
+}
 nav .logo a 
 {
     margin-left: 5% ;
     font-size: 3.5rem;
     font-weight: 600;
-    color: var(--main-color);
-    transform: 0.3s;
+    color: var(--text-color);
+    transform: 6s;
 }
 
 nav .logo a:hover
 {
     letter-spacing: 0.5px;
+    color: var(--main-color);
 }
 
 nav .checkbox
@@ -106,28 +97,24 @@ ul li a
     border: 2px solid transparent;
     font-weight: 600;
     font-size: 23px;
-    color: var(--main-color);
+    color: var(--text-color);
     transition: 6s;
 }
 
 ul li a:hover
 {
-    border-top-color: var(--secondary-color) ;
-    border-bottom: var(--secondary-color);
-    color: var(--text-color);
+    color: var(--main-color);
+    margin-bottom: 1px solid var(--main-color);
+    letter-spacing: 0.5px;
 }
 
 nav.sticky 
 {
     background: var(--bg-color);
     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .2);
-    padding: 16px 16%;
+    padding: 16px 2%;
+    border-bottom: 0.01px solid var(--main-color);
 }
-
-
-
-
-
 
 .section
 {
@@ -197,7 +184,6 @@ title span
     margin-bottom: 2rem;
     letter-spacing: 1rem;
     color: var(--main-color);
-    
 }
 
 .social-media i:hover
@@ -224,7 +210,7 @@ title span
     cursor: pointer;
 }
 
-.hire-me
+.Download-CV
 {
     background: var(--main-color);
     color: var(--bg-color);
@@ -232,14 +218,14 @@ title span
     transition: all .50s ease;
 }
 
-.hire-me:hover
+.Download-CV:hover
 {
     background: transparent;
     color: var(--main-color);
     box-shadow: 0 0 20px var(--main-color);
 }
 
-.Portfolio
+.Hire-Me
 {
     background: transparent;
     color: var(--main-color);
@@ -247,7 +233,7 @@ title span
     transition: all .50s ease;
 }
 
-.Portfolio:hover
+.Hire-Me:hover
 {
     background: var(--main-color);
     color: var(--bg-color);
@@ -270,13 +256,141 @@ title span
 
 
 
+
+.about
+{
+    background: var(--second-bg-color);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+    margin-top: -5%;
+}
+
+.about-image{
+    display: grid;
+    place-items: center;
+    margin-top: 5%;
+    margin-bottom: 30%;
+}
+.about-image img
+{
+    width:  min(25rem, 90%);
+    border-radius: 100%;
+    border: 1px solid var(--main-color);
+    box-shadow: 0 0 2px var(--main-color);
+    margin-left: 10%;
+}
+
+.about-text h2
+{
+    font-size: var(--h2-font);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.about-text h2 span
+{
+    color: var(--main-color);
+}
+
+.exp-area
+{
+    margin-bottom: 50px;
+}
+
+.exp-area p
+{
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 42px;
+}
+
+.exp-area p span
+{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.btn
+{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    outline: none;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border: 2px solid var(--main-color);
+    transition: all .50s ease;
+    margin-bottom: 5%;
+}
+
+.btn:hover
+{
+    background: transparent;
+    color: var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+
+
+.skills
+{
+    background: var(--bg-color);
+    width: 100%;
+    height: auto;
+}
+
+.skills .skill
+{
+    margin: 10%;
+}
+
+h1 .sub-title
+{
+    font-size: var(--h2-font);
+}
+
+section
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (width < 750px){
     nav .checkbox{
         display: block;
     }
 
     nav .logo a{
-        font-size: 22px;
+        font-size: 25px;
+        background: var(--bg-color);
+    }
+    .nav.sticky {
+        padding: 1px 1%;
     }
     .section-container{
         margin: 1%;
@@ -341,5 +455,33 @@ title span
         font-size: 14px;
         letter-spacing: 1px;
         padding: 0.5rem 1rem;
+    }
+    .about{
+        margin-top: 40%;
+        display: table-column;
+        padding: 5rem 1rem 5rem 1rem;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+   
+    .about-image{
+        grid-area: 1/1/2/2;
+        margin-bottom: 1.5rem;
+    }
+    .about-text h2{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .btn
+    {
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding: 0.5rem 1rem;
+    }
+
+
+    .skills{
+        margin-top: 35%;
     }
 }
