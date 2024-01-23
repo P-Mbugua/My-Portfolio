@@ -378,6 +378,16 @@ section
 
 
 
+.contact
+{
+    background: var(--bg-color);
+    width: 100%;
+    height: auto;
+}
+
+
+
+
 
 
 @media (width < 750px){
