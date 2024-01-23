@@ -467,7 +467,7 @@ section
         padding: 0.5rem 1rem;
     }
     .about{
-        margin-top: 40%;
+        margin-top: 30%;
         display: table-column;
         padding: 5rem 1rem 5rem 1rem;
         text-align: center;
@@ -476,7 +476,8 @@ section
    
     .about-image{
         grid-area: 1/1/2/2;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
+        width:  min(30rem, 90%);
     }
     .about-text h2{
         font-size: 22px;
