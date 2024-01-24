@@ -17,7 +17,7 @@
     --other-color: #c3cad5;
 
     --h1-font: 4.5rem;
-    --h2-font: 2.9rem;
+    --h2-font: 2.2rem;
     --p-font: 1rem;
 }
 
@@ -393,13 +393,73 @@ section
 
 
 
-.contact
+.reach
 {
-    background: var(--bg-color);
+    background: var(--second-bg-color);
     width: 100%;
     height: auto;
 }
 
+.reach .contact-contents
+{
+    margin-right: 10%; margin-left: 10%; margin-top: 3%;
+}
+
+.contact-title
+{
+    color: var(--text-color);
+    text-align: center;
+    font-size: var(--h2-font);
+    font-weight: 600;
+    margin-bottom: 4%;
+}
+
+.contact-title span
+{
+    color: var(--main-color);
+}
+
+.contact-title:hover
+{
+    letter-spacing: 1px;
+}
+
+.contact-description
+{
+    font-size: 20px;
+    color: var(--other-color);
+    text-align: center;
+}
+
+.contact-content
+{
+    display: flex;
+    gap: 10rem;
+    margin-top: 5%;
+}
+
+.location-info
+{
+    width: 25rem;
+    height: 30rem;
+    background: var(--other-color);
+    border-radius: 8px;
+    border: 1px solid var(--text-color);
+    box-shadow: 0 0 1px 1px var(--text-color);
+    margin-bottom: 10%; margin-left: 5%;
+}
+
+.form-info
+{
+    width: 25rem;
+    height: 30rem;
+    background: var(--other-color);
+    border-radius: 8px;
+    border: 1px solid var(--text-color);
+    box-shadow: 0 0 1px 1px var(--text-color);
+    margin-bottom: 10%;
+
+}
 
 
 
