@@ -571,4 +571,18 @@ section
         margin-top: 1%;
         
     }
+
+    .contact-contents{
+        
+        display: table-column;
+        text-align: center;
+        margin: 0 -30px -30px 0;
+    }
+    .contact-content
+    {
+        display: inline-block;
+    }
+    .contact-content .location-info{
+        margin-left: 0;
+    }
 }
