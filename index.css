@@ -456,6 +456,7 @@ section
     transform: translateY(-5px) scale(1.03);
     border: 1px solid var(--main-color);
     box-shadow: 0 0 1px 1px var(--main-color);
+    transition: 6s;
 }
 
 .location-info .contact-title
@@ -504,16 +505,19 @@ section
 }
 .location-info p
 {
-    margin-top: 3%;
+    margin-top: 30%;
     color: var(--second-bg-color);
     font-style: italic;
     transition: 3s;
+    text-align: center;
+    justify-content: center;
 }
 
 .location-info p:hover
 {
     color: var(--main-color);
-    font-size: 23px;
+    font-size: 13px;
+
 }
 
 .form-info
@@ -522,9 +526,9 @@ section
     height: 35rem;
     background: var(--other-color);
     border-radius: 8px;
-    border: 1px solid var(--text-color);
-    box-shadow: 0 0 1px 1px var(--text-color);
-    margin-bottom: 10%;
+    border: 0.5px solid var(--text-color);
+    box-shadow: 0 0 0.5px 0.5px var(--text-color);
+    margin-bottom: 20%;
 
 }
 
@@ -532,7 +536,8 @@ section
 {
     text-align: center;
     margin-top: 5%;
-    color: var(--main-color);
+    color: var(--text-color);
+    font-weight: 1600;
     font-size: 26Px;
 }
 
@@ -592,6 +597,7 @@ form .send-btn:hover
     transform: translateY(-5px) scale(1.03);
     border: 1px solid var(--main-color);
     box-shadow: 0 0 1px 1px var(--main-color);
+    transition: 6s;
 }
 
 
@@ -704,6 +710,15 @@ form .send-btn:hover
         
     }
 
+    .contact-description{
+    margin-left: 0;
+    width: 100%;
+    font-size: 18px;
+    color: var(--other-color);
+    text-align: center;
+    margin-top: -2%;
+    }
+
     .contact-contents{
         
         display: table-column;
@@ -722,4 +737,39 @@ form .send-btn:hover
     .contact-content .location-info{
         margin-left: 0;
     }
+    .location-info{
+    width: 22rem;
+    height: 32rem;
+    }
+    .location-info p{
+    margin-top: 30%;
+    }
+    .location-info:hover{
+        transition: 2s;
+    }
+    .location-info p:hover{
+    color: var(--main-color);
+    font-size: 17px;
+    margin-right: 4%; margin-left: 4%;
+    }
+    .icons i{
+    color: var(--main-color);
+    font-size: 20px;
+   }
+
+   .icons h3{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight:1800;
+   }
+   .form-info{
+    width: 22rem;
+    height: 32rem;
+   }
+   .form-info .send-message{
+    font-size: 20Px;
+   }
+   .form-info:hover{
+    transition: 3s;
+   }
 }
