@@ -691,6 +691,8 @@ form .send-btn:hover
         grid-area: 1/1/2/2;
         margin-bottom: 2rem;
         margin-top: -2%;
+         width:  min(30rem, 90%);
+         height: 20rem, 10%;
     }
     .about-text h2{
         font-size: 22px;
